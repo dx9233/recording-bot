@@ -57,7 +57,7 @@ async def register(message: Message):
     )
 
     await message.answer(
-        "Order Successfull!\nТренер свяжется с вами."
+        "Order Successfull!\nThe coach will contact you."
     )
 
 
@@ -70,7 +70,7 @@ async def support(message: Message):
 
 
 # Назад
-@dp.message(F.text == "⬅️ Назад")
+@dp.message(F.text == "Back")
 async def back(message: Message):
     await message.answer(
         "Home:",
